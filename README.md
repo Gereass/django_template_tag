@@ -21,38 +21,34 @@ python3 -m venv env
 source env/bin/activate
 ```
 2. Клонирование репозитория
-Склонируйте репозиторий на ваш компьютер:
 
 ```bash
 git clone git@github.com:Gereass/django_template_tag.git 
 ```
 3. Установка зависимостей
-Установите зависимости из файла `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
 ```
 4. Применение миграций
-Примените миграции для создания таблиц в базе данных:
 
 ```bash
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
-5. Создание суперпользователя
-Создайте суперпользователя для доступа к админке:
+5. Создание суперпользователя для доступа к админке:
 
 ```bash
 python3 manage.py createsuperuser
 ```
 6. Запуск сервера
 
-Запустите сервер либо вручную, либо через доккер
+#### Запустите сервер либо вручную, либо через Docker
 
 ```bash
 python manage.py runserver
 ```
-Перейдите по адресу `http://localhost:8000`, чтобы увидеть приложение.
+#### Перейдите по адресу `http://localhost:8000`, чтобы увидеть приложение.
 
 ## Docker
 Проект включает файлы *Dockerfile* и *docker-compose.yml* для контейнеризации.
