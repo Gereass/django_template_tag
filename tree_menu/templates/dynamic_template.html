@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ menu_item.name }}</h1>
+<p>Это динамическая страница для пункта меню "{{ menu_item.name }}".</p>
+
+<a href="/">Вернуться на главную страницу</a>
+{% endblock %}
